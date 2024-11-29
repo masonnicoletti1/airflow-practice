@@ -1,3 +1,5 @@
+#!//usr/bin/python3
+
 from airflow import Dataset
 from airflow.decorators import (
     dag,
