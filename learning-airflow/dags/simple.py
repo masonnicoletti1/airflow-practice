@@ -12,9 +12,10 @@ from bson.json_util import dumps
 
 MONGOPASS = Variable.get('MONGOPASS')
 
-uri = "mongodb+srv://cluster0.m3fek.mongodb.net/"
+uri = "mongodb+srv://cluster0.cxx6sw.mongodb.net/"
 client = MongoClient(uri, username='ds2022', password=MONGOPASS, connectTimeoutMS=200, retryWrites=True)
-db = client.nem2p  # database
+# CHANGE the line below to map to a client.xxxx database name with your computing ID, i.e. "db = client.mst3k" etc.
+db = client.cxx6sw        # database
 flights = db.flights     # collection 
 
 # -------------- #
